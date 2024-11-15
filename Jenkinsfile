@@ -10,12 +10,18 @@ pipeline {
         
         stage ('fetch code') {
             steps {
-                git branch: 'main', url: 'https://github.com/hkhcoder/vprofile-project.git'
+                git branch: 'java', url: 'https://github.com/seunayolu/sonarqube-jenkins.git'
             }
         }
         stage('build-app'){
             steps {
                 sh 'mvn clean install -DskipTests'
+            }
+        }
+
+        stage('build-app'){
+            steps {
+                sh 'mvn clean compile -DskipTests'
             }
         }
 
@@ -31,6 +37,7 @@ pipeline {
                    -Dsonar.projectName=javaapp-repo \
                    -Dsonar.projectVersion=1.0 \
                    -Dsonar.sources=src/ \
+                   -Dsonar.java.binaries=target/classes \
                    -Dsonar.organization=myreg-app'''
             }
           }
