@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage('build-app'){
+        stage('app-compile'){
             steps {
                 sh 'mvn clean compile -DskipTests'
             }
@@ -41,6 +41,14 @@ pipeline {
                    -Dsonar.organization=myreg-app'''
             }
           }
+        }
+
+        stage (quality gate) {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
         }
     }
 }
