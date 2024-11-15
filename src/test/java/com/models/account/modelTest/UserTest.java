@@ -1,4 +1,4 @@
-package com.models.account.modelTest;
+package com.visualpathit.account.modelTest;
 
 import junit.framework.Assert;
 
@@ -9,8 +9,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.models.account.model.Role;
-import com.models.account.model.User;
+import com.visualpathit.account.model.Role;
+import com.visualpathit.account.model.User;
 
 /** {@author imrant} !*/
 public class UserTest {

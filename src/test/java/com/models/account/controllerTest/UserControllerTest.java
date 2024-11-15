@@ -1,4 +1,4 @@
-package com.models.account.controllerTest;
+package com.visualpathit.account.controllerTest;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -15,10 +15,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 
-import com.models.account.controller.UserController;
-import com.models.account.model.User;
-import com.models.account.service.UserService;
-import com.models.account.setup.StandaloneMvcTestViewResolver;
+import com.visualpathit.account.controller.UserController;
+import com.visualpathit.account.model.User;
+import com.visualpathit.account.service.UserService;
+import com.visualpathit.account.setup.StandaloneMvcTestViewResolver;
 
 
 
