@@ -36,7 +36,7 @@ pipeline {
                    -Dsonar.projectKey=java-app \
                    -Dsonar.projectName=javaapp-repo \
                    -Dsonar.projectVersion=1.0 \
-                   -Dsonar.sources=src/ \
+                   -Dsonar.sources=src/main/java \
                    -Dsonar.java.binaries=target/classes \
                    -Dsonar.organization=myreg-app'''
             }
