@@ -1,4 +1,4 @@
-package com.visualpathit.account.controllerTest;
+package com.models.account.controllerTest;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;

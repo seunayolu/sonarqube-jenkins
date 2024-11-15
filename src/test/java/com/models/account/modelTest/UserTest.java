@@ -1,4 +1,4 @@
-package com.visualpathit.account.modelTest;
+package com.models.account.modelTest;
 
 import junit.framework.Assert;
 
